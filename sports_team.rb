@@ -37,11 +37,13 @@ class SportsTeam
     end
     return false
   end
-  #
-  # def add_point()
-  #   return points += 1
-  #   if win
-  #   end
-  # end
+
+  def add_point(result)
+    if result == "win"
+      return @points += 1
+   elsif result == "lose"
+      return @points
+    end
+  end
 
 end

@@ -33,12 +33,11 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(true, has_lisa)
   end
 
-  # def test_add_point
-  #   @team1.add_point(1)
-  #   expected = 1
-  #   actual = @team1.points
-  #   assert_equal(expected, actual)
-  # end
+  def test_add_point
+    expected = 1
+    actual = @team1.add_point("win")
+    assert_equal(expected, actual)
+  end
 
 
 end
